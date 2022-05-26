@@ -76,3 +76,7 @@ body {
     cursor: pointer;
     user-select: none;
 }
+
+.indicator.active {
+    background-color: red;
+}

@@ -109,3 +109,7 @@ body {
 
   background-color: #cccccc;
 }
+
+.indicator.active {
+  background-color: red;
+}
