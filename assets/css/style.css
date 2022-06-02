@@ -82,9 +82,28 @@ body {
   gap: 1em;
 }
 
-.control {
-  display: block;
+.controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
 
+.control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  width: 20px;
+  height: 20px;
   padding: 0.5em 1em;
 
   cursor: pointer;
@@ -97,8 +116,8 @@ body {
 }
 
 .indicator {
-  display: block;
-
+  width: 20px;
+  height: 20px;
   padding: 0.5em 1em;
 
   cursor: pointer;
@@ -112,4 +131,14 @@ body {
 
 .indicator.active {
   background-color: red;
+}
+
+.control-pause {
+  position: relative;
+}
+
+.control-pause > span {
+  position: absolute;
+
+  opacity: 0;
 }

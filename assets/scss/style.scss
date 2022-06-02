@@ -61,22 +61,40 @@ body {
     margin-top: 1em;
 }
 
+.controls {
+    display: flex;
+    justify-content: center;
+}
+
 .control {
     background-color: #cccccc;
-    display: block;
     padding: 0.5em 1em;
     cursor: pointer;
     user-select: none;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .indicator {
     background-color: #cccccc;
-    display: block;
     padding: 0.5em 1em;
     cursor: pointer;
     user-select: none;
+    width: 20px;
+    height: 20px;
 }
 
 .indicator.active {
     background-color: red;
+}
+
+.control-pause {
+    position: relative;
+}
+.control-pause > span {
+    position: absolute;
+    opacity: 0;
 }
