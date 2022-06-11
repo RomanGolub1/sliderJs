@@ -54,16 +54,16 @@ body {
 .carousel {
     margin: 1em;
 }
+//.controls {
+//    display: flex;
+//    justify-content: center;
+//}
+
 .indicators,
 .controls {
     display: flex;
     gap: 1em;
     margin-top: 1em;
-}
-
-.controls {
-    display: flex;
-    justify-content: center;
 }
 
 .control {
